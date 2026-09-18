@@ -1,6 +1,10 @@
 # Deployement Link : 
 [e-commerce-checkout-payment-system-production-24eb.up.railway.app](e-commerce-checkout-payment-system-production-24eb.up.railway.app)
 
+Admin Username : admin@paycart.com
+
+password : password123
+
 
 # PayCart POS & Inventory System
 
