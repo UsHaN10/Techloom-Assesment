@@ -1,3 +1,8 @@
+# Deployement Link : pos-order-inventory-system-production-e6ec.up.railway.app
+Admin username : admin@paycart.com
+Admin password : admin123
+
+
 # PayCart POS & Inventory System
 
 A modern, full-stack Point-of-Sale (POS) and inventory management application designed with a sleek neon-minimalist UI. Built to streamline retail operations with robust authentication, role-based access control (RBAC), and real-time safe stock management powered by **PostgreSQL**.
