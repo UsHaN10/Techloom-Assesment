@@ -1,0 +1,142 @@
+:root {
+  --primary-olive: #899252;
+  --primary-dark: #222222;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  /* Using a live Unsplash image of a minimal desk workspace since the local bg.jpg was missing */
+  background: #f5f5f5 url('https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2070&auto=format&fit=crop') no-repeat center center fixed;
+  background-size: cover;
+  color: var(--primary-dark);
+  overflow-x: hidden;
+}
+
+/* Subtle clean white overlay to ensure the UI remains readable while letting the image peek through */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  /* Make overlay lighter so the background image pops out clearly */
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1) 0%, rgba(245, 245, 245, 0.4) 100%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Clean, bright Glassmorphism Styles */
+.ant-card,
+.ant-table-wrapper,
+.ant-drawer-content,
+.ant-modal-content {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.6) !important;
+  box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.06) !important;
+}
+
+.ant-card:hover {
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 16px 40px rgba(137, 146, 82, 0.15) !important;
+  border-color: rgba(137, 146, 82, 0.4) !important;
+}
+
+/* Tab highlights for elegant aesthetic */
+.ant-tabs-tab-active .ant-tabs-tab-btn {
+  text-shadow: 0 0 1px var(--primary-olive);
+  letter-spacing: 0.2px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.ant-btn-primary {
+  background: linear-gradient(135deg, var(--primary-olive) 0%, #9ba65f 100%) !important;
+  border: none !important;
+  box-shadow: 0 4px 15px rgba(137, 146, 82, 0.3) !important;
+}
+
+.ant-btn-primary:hover {
+  background: linear-gradient(135deg, #7c854a 0%, #909a58 100%) !important;
+  box-shadow: 0 6px 20px rgba(137, 146, 82, 0.4) !important;
+  transform: scale(1.02);
+}
+
+.ant-table-cell {
+  background: transparent !important;
+}
+
+.ant-table-thead>tr>th {
+  background: rgba(137, 146, 82, 0.08) !important;
+  color: var(--primary-dark) !important;
+  border-bottom: 2px solid rgba(137, 146, 82, 0.15) !important;
+}
+
+/* --- Stylish Minimalist Scrollbar --- */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(137, 146, 82, 0.6);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(137, 146, 82, 0.9);
+}
+
+/* --- Entrance Animation for Cards --- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ant-card {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+/* Staggered animation delay for cards to give a cascading effect */
+.ant-col:nth-child(1) .ant-card {
+  animation-delay: 0.05s;
+}
+
+.ant-col:nth-child(2) .ant-card {
+  animation-delay: 0.1s;
+}
+
+.ant-col:nth-child(3) .ant-card {
+  animation-delay: 0.15s;
+}
+
+.ant-col:nth-child(4) .ant-card {
+  animation-delay: 0.2s;
+}
+
+.ant-col:nth-child(5) .ant-card {
+  animation-delay: 0.25s;
+}
+
+.ant-col:nth-child(6) .ant-card {
+  animation-delay: 0.3s;
+}
+
+.ant-col:nth-child(n+7) .ant-card {
+  animation-delay: 0.35s;
+}
