@@ -1,5 +1,4 @@
-# Deployement Link : 
-[Click-Here](pos-order-inventory-system-production-e6ec.up.railway.app)
+# Deployement Link : [pos-order-inventory-system-production-e6ec.up.railway.app](pos-order-inventory-system-production-e6ec.up.railway.app)
 
 Admin username : admin@paycart.com
 
