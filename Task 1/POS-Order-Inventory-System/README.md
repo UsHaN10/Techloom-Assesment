@@ -1,3 +1,10 @@
+# Deployement Link : 
+[pos-order-inventory-system-production-e6ec.up.railway.app](pos-order-inventory-system-production-e6ec.up.railway.app)
+
+Admin username : admin@paycart.com
+
+Admin password : admin123
+
 # 🛒 PayCart POS & Inventory Management System
 
 A full-stack, real-time **Point of Sale (POS) and Inventory Management System** built with React, Vite, Ant Design, Express.js, and **PostgreSQL**. Ready for production deployment on **Railway**.
