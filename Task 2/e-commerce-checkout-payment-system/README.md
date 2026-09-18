@@ -1,4 +1,5 @@
-# Deployement Link : pos-order-inventory-system-production-e6ec.up.railway.app
+# Deployement Link : 
+pos-order-inventory-system-production-e6ec.up.railway.app
 Admin username : admin@paycart.com
 Admin password : admin123
 
